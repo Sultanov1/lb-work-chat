@@ -1,7 +1,11 @@
+import ChatForm from './components/ChatForm/ChatForm';
+import ChatList from './components/ChatList/ChatList';
+
 const App = () => (
-    <>
-        Hello Attractor
-    </>
+  <>
+    <ChatForm/>
+    <ChatList/>
+  </>
 );
 
-export default App
+export default App;
