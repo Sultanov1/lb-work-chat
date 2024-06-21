@@ -18,24 +18,28 @@ const ChatForm: React.FC<Props> = ({onSendMessage}) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form onSubmit={handleSubmit} className='d-flex align-items-center justify-content-center mt-2'>
+      <label className='me-3'>
         Enter your name
         <input
+          className='form-control'
           type="text"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
           required/>
       </label>
-      <label>
+      <label className='me-2'>
         Type your message
         <input
+          className='form-control'
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required/>
       </label>
-      <button type="submit">Send</button>
+      <button
+        className='btn btn-primary btn-md mt-4'
+        type="submit">Send</button>
     </form>
   );
 };
