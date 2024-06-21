@@ -1,7 +1,7 @@
 const ChatList = () => {
   return (
-    <div>
-      MessageList
+    <div className='chat overflow-y-scroll'>
+      some Message
     </div>
   );
 };
